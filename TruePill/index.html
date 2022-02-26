@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Tables</title>
+</head>
+<body>
+    <!-- <script src="index.js">
+        var medicationTable = [];//need this to prevent duplicates, definition here lets use in index.js since data will only be used after page load
+    </script> -->
+    <input type="text" name="medName" id="medName">
+    <label for="medName">Medicine Name</label>
+    <br>
+    <input type="text" name="strength" id="strength">
+    <label for="strength">Strength</label>
+    <br>
+    <input type="text" name="packSize" id="packSize">
+    <label for="packSize">Pack Size</label>
+    <br>
+    <input type="text" name="totalPacks" id="totalPacks">
+    <label for="totalPacks">Total Packs</label>
+    <br>
+    <button onclick="addData()">Save Data</button>
+    <br>
+    <button onclick="logDataFormulary()">Show Formulary Data In Log</button>
+    <br>
+    <button onclick="logDataInventory()">Show Inventory Data In Log</button>
+    <button onclick="editLog()">Edit Log</button>
+    <button onclick="removeLog()">Delete Data</button>
+    <table id="formularyTable">
+        <thead>
+          <tr>
+            <th>Medication Name</th>
+          </tr>
+        </thead>
+        <tbody id="formularyTableData">
+  
+        </tbody>
+    </table>
+    <br>
+    <table id="stockTable">
+        <thead>
+          <tr>
+            <th>Medication Name</th>
+            <th>Strength</th>
+            <th>Pack Size</th>
+            <th>Number of Packs</th>
+          </tr>
+        </thead>
+        <tbody id="stockTableData">
+  
+        </tbody>
+    </table>
+      <script src="index.js"></script>
+
+
+
+</body>
+</html>
